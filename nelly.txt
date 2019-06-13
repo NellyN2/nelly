@@ -1,0 +1,141 @@
+#print("Hello world")
+#load dplyr library(tidyverse)
+if(FALSE) {
+"This demonstrates multi line comments"
+}
+mystring <- "Hello world!"
+print(mystring)
+100:130
+
+
+print("**************************Starting on vectors**********************")
+
+v <- TRUE
+print(class(v))
+
+v <- 23.4
+print(class(v))
+
+v <- 4L
+print(class(v))
+
+v <- 2+5i
+print(class(v))
+
+v <- "Donkey"
+print(class(v))
+
+v <- charToRaw("Hello")
+print(class(v))
+
+#Creating vectors with more than one element we use function c() for combine
+# example
+
+apple <- c('red', 'green', 'yellow')
+print(apple)
+
+#get the class of the vector
+
+print(class(apple))
+
+print("**************************Starting on Lists**********************")
+#create a list
+
+List1 <- list(c(23,24,56,7),23.4,sin)
+print(List1)
+
+print("**************************Starting on Matrices**********************")
+#create matrix
+
+M = matrix(c('a', 'a', 'b', 'c', 'b', 'a'), nrow = 2, ncol = 3, byrow = TRUE)
+print(M)
+print(class(M))
+
+
+print("**************************Starting on Arrays**********************")
+#create an array
+
+Array <- array(c('green', 'yellow'), dim = c(3,3,4))
+#a matrix of 3*3 is printed 4 times, i'e 4 elements of the matrix
+print(Array)
+
+
+
+
+#Rscript Hello.r
+
+
+
+
+print("**************************Starting on Factors**********************")
+#create a factor
+# these are r-objects which are created using a vector
+
+# 1 create a vector
+apple_color <- c('green','green','yellow','red','red','red','green')
+
+# 2 create a factor object
+factor_apple <- factor(apple_color)
+
+print(factor_apple)
+
+# applying the nlevels function we can know the number of distinct values
+print(nlevels(factor_apple))
+
+
+
+print("**************************Starting on Data Frames**********************")
+#Data frames are tabular data objects.
+#It is a list of vectors of equal length
+#Data Frames are created using the data.frame() function.
+
+#create Data frames
+Dat_Fram <- data.frame(
+         gender = c("male", "male", "female"),
+         height = c(23,23.4,123),
+         age    = c(13,14,22)
+              )
+print(Dat_Fram)
+
+
+
+print("**************************R variables**********************")
+#The two type of assignments
+#use print() and cat() functions to print the variables
+var.1 = c(0,1,2,3)
+var.2 <- c("learn", "R")
+c(TRUE,1) -> var.3
+print(var.1)
+cat("var.1 is ", var.1, "\n")
+cat("var.2 is ", var.2, "\n")
+cat("var.3 is ", var.3, "\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
